@@ -1,10 +1,13 @@
-﻿namespace PhilippIO.Scripts
+﻿using SFML.Graphics;
+
+namespace PhilippIO.Scripts
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game game = new(1920, 1080, "Game", Color.White);
+            game.Run();
         }
     }
 }
